@@ -1485,10 +1485,16 @@ footer.container {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  text-decoration: none;
+}
+
+.breadcrumb-item:hover {
+  text-decoration: underline;
 }
 
 .breadcrumb-item.active {
   font-weight: 600;
+  pointer-events: none;
 }
 
 .breadcrumb-arrow {
