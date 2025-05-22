@@ -1451,230 +1451,14 @@ footer.container {
   }
 }
 
-/* Product Listing Page */
-
-/* Hero banner */
-.hero-banner {
-  width: 100%;
-  height: 512px;
-  background: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    ),
-    url(images/storefront.png);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-title {
-  color: var(--white);
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 96px;
-}
-
-.content-section {
-  width: 100%;
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 96px;
-}
-
-.product-section {
-  width: 100%;
-  display: flex;
-  gap: 64px;
-  margin-bottom: 48px;
-}
-
-.product-gallery {
-  flex: 1;
-  max-width: 616px;
-}
-
-.product-image {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 616/700;
-  object-fit: cover;
-  display: block;
-}
-
-.product-details {
-  flex: 1;
-  max-width: 616px;
-}
-
-@media screen and (max-width: 992px) {
-  .product-section {
-    flex-direction: column;
-    gap: 32px;
-  }
-
-  .product-gallery,
-  .product-details {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero-banner {
-    height: 350px;
-  }
-
-  .hero-title {
-    font-size: 40px;
-    line-height: 60px;
-  }
-
-  .filter-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .filter-options {
-    width: 100%;
-    overflow-x: auto;
-    padding-bottom: 8px;
-  }
-
-  .filter-option,
-  .sort-option {
-    white-space: nowrap;
-  }
-
-  .load-more-section {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .hero-banner {
-    height: 250px;
-  }
-
-  .hero-title {
-    font-size: 32px;
-    line-height: 48px;
-  }
-
-  .content-section {
-    gap: 48px;
-  }
-
-  .product-section {
-    gap: 32px;
-  }
-
-  .product-grid {
-    gap: 16px;
-  }
-
-  .product-card {
-    width: 100%;
-  }
-
-  .product-image {
-    height: 300px;
-  }
-}
-
-/* Load more*/
-.load-more-section {
-  width: 100%;
-  max-width: 616px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 24px;
-}
-
-.load-more-button {
-  align-self: stretch;
-  padding: 12px 24px;
-  background: var(--dark-grey);
-  color: var(--white);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  border: none;
-  cursor: pointer;
-}
-
-.load-more-button:hover {
-  opacity: 0.9;
-}
-
-.product-count {
-  align-self: stretch;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: var(--dark-grey);
-}
-
-/* Responsive styles for product listing page */
-@media screen and (max-width: 1200px) {
-  .hero-banner {
-    height: 450px;
-  }
-
-  .hero-title {
-    font-size: 56px;
-    line-height: 84px;
-  }
-
-  .product-grid {
-    gap: 24px;
-  }
-
-  .product-card {
-    width: calc(33.33% - 16px);
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .hero-banner {
-    height: 400px;
-  }
-
-  .hero-title {
-    font-size: 48px;
-    line-height: 72px;
-  }
-
-  .content-section {
-    gap: 64px;
-  }
-
-  .product-section {
-    gap: 48px;
-  }
-
-  .product-grid {
-    gap: 20px;
-  }
-
-  .product-card {
-    width: calc(50% - 10px);
-  }
-
-  .product-image {
-    height: 320px;
-  }
-}
-
 /* product page */
+
+.info-title-product {
+  text-align: start;
+  word-wrap: break-word;
+  font-size: 18px;
+  font-weight: 600;
+}
 
 .container-product {
   width: 100%;
@@ -1939,26 +1723,24 @@ footer.container {
 
 .size-option {
   padding: 8px 16px;
-  outline: 1px var(--black) solid;
-  outline-offset: -1px;
+  border: 1px solid var(--dark-grey);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
 }
 
 .size-option.selected {
   background: var(--black);
+  color: var(--white);
 }
 
 .size-value {
+  color: var(--dark-grey);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-}
-
-.size-option.selected .size-value {
-  color: var(--white);
 }
 
 /* Quantity Selector */
@@ -2080,7 +1862,7 @@ footer.container {
   overflow: hidden;
   display: inline-flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: s;
   gap: 24px;
   cursor: pointer;
 }
@@ -2479,5 +2261,292 @@ footer.container {
 
   .item-details {
     flex-direction: column;
+  }
+}
+
+/* Main wrapper */
+.ceramics-main-wrapper {
+  width: 100%;
+  padding: 112px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 80px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Hero banner */
+.ceramics-hero-banner {
+  width: 1312px;
+  height: 512px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  background-image: url("https://placehold.co/1312x512");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ceramics-hero-text {
+  color: white;
+  font-size: 64px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  line-height: 96px;
+  word-wrap: break-word;
+}
+
+/* Content wrapper */
+.ceramics-content-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 96px;
+}
+
+/* Products section */
+.ceramics-products-section {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+/* Filter bar */
+.ceramics-filter-bar {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ceramics-filter-group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.ceramics-filter-item,
+.ceramics-sort-item {
+  padding: 4px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.ceramics-filter-label {
+  color: #141414;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.ceramics-dropdown-arrow {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ceramics-dropdown-arrow::after {
+  content: "";
+  width: 13.75px;
+  height: 7.5px;
+  position: absolute;
+  left: 3.12px;
+  top: 6.87px;
+  background: #141414;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+}
+
+/* Product grid */
+.ceramics-product-grid {
+  align-self: stretch;
+  display: grid;
+  grid-template-columns: repeat(4, 304px);
+  gap: 32px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Product item */
+.ceramics-product-item {
+  width: 304px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.ceramics-product-img {
+  align-self: stretch;
+  height: 364.8px;
+  object-fit: cover;
+}
+
+.ceramics-product-content {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.ceramics-product-text {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.ceramics-product-brand {
+  align-self: stretch;
+  color: #141414;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+  word-wrap: break-word;
+}
+
+.ceramics-product-title {
+  color: #141414;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+
+.ceramics-product-cost {
+  align-self: stretch;
+  color: #141414;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  line-height: 30px;
+  word-wrap: break-word;
+}
+
+/* Load more section */
+.ceramics-load-section {
+  width: 616px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.ceramics-load-btn {
+  align-self: stretch;
+  padding: 12px 24px;
+  background: #141414;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.ceramics-load-btn:hover {
+  background: #333333;
+}
+
+.ceramics-result-count {
+  align-self: stretch;
+  text-align: center;
+  color: #141414;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+/* Responsive design for ceramics page */
+@media (max-width: 1440px) {
+  .ceramics-main-wrapper {
+    padding: 80px 32px;
+  }
+
+  .ceramics-hero-banner {
+    width: 100%;
+    max-width: 1312px;
+  }
+
+  .ceramics-product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .ceramics-main-wrapper {
+    padding: 40px 16px;
+    gap: 40px;
+  }
+
+  .ceramics-hero-text {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  .ceramics-filter-bar {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .ceramics-filter-group {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .ceramics-product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+  }
+
+  .ceramics-load-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .ceramics-product-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .ceramics-product-item {
+    width: 100%;
   }
 }
