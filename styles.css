@@ -1988,6 +1988,15 @@ footer.container {
 
 /* Cart Section */
 
+.container-checkout {
+  width: 100%;
+  padding: 112px 64px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  justify-content: center;
+}
+
 .cart-section {
   width: 768px;
   padding: 32px;
