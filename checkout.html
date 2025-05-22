@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liwira</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="info-banner">
+      <div class="icon-container">
+        <i class="ph ph-gift"></i>
+      </div>
+      <div class="banner-text">Gratis indpakning ved køb af gavekurv</div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-top">
+        <div class="nav-left">
+          <button class="mobile-menu-toggle">
+            <i class="ph ph-list"></i>
+          </button>
+          <a href="index.html">
+            <img
+              src="images/liwira-logo.svg"
+              alt="Liwira Logo"
+              class="nav-logo"
+            />
+          </a>
+          <div class="search-wrapper">
+            <i class="ph ph-magnifying-glass"></i>
+            <div class="search-text">Søg efter produkter og brands</div>
+          </div>
+        </div>
+        <div class="nav-right">
+          <button class="btn-erhverv">Erhverv</button>
+          <div class="utility-icons">
+            <div class="utility-icon-container"></div>
+            <i class="ph ph-user"></i>
+            <i class="ph ph-star"></i>
+            <i class="ph ph-shopping-cart"></i>
+          </div>
+        </div>
+      </div>
+      <div class="nav-categories">
+        <div class="category-list">
+          <div class="category-item">Gavekurve</div>
+          <div class="category-item">Baby</div>
+          <div class="category-item">Delikatesser</div>
+          <div class="category-item">Interiør</div>
+          <div class="category-item">Køkken</div>
+          <div class="category-item">Pleje</div>
+          <div class="category-item">Keramik</div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="cart-section">
+        <div class="cart-container">
+          <div class="cart-content">
+            <div class="cart-title">Din indkøbskurv</div>
+            <div class="cart-items">
+              <!-- Item 1 -->
+              <div class="cart-item" data-device="Desktop">
+                <div class="item-details">
+                  <img
+                    class="item-image"
+                    src="images/product/gavekurv.png"
+                    alt="Byg selv gavekurv"
+                  />
+                  <div class="item-info">
+                    <div class="item-header">
+                      <div class="item-brand">Liwira</div>
+                      <div class="item-name">Byg selv gavekurv</div>
+                    </div>
+                    <div class="item-variation">Valg frit beløb</div>
+                  </div>
+                </div>
+                <div class="item-actions">
+                  <div class="item-price">0,-</div>
+                  <div class="quantity-actions">
+                    <div class="quantity-selector">
+                      <i class="ph ph-minus"></i>
+                      <div class="quantity-value">1</div>
+                      <i class="ph ph-plus"></i>
+                    </div>
+                    <div class="remove-btn">Fjern</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="cart-item" data-device="Desktop">
+                <div class="item-details">
+                  <img
+                    class="item-image"
+                    src="images/product/skovkop-beige.webp"
+                    alt="Skovkop Beige"
+                  />
+                  <div class="item-info">
+                    <div class="item-header">
+                      <div class="item-brand">Lena Fischers keramik</div>
+                      <div class="item-name">Skovkop</div>
+                    </div>
+                    <div class="item-variation">Beige</div>
+                  </div>
+                </div>
+                <div class="item-actions">
+                  <div class="item-price">159,-</div>
+                  <div class="quantity-actions">
+                    <div class="quantity-selector">
+                      <i class="ph ph-minus"></i>
+                      <div class="quantity-value">1</div>
+                      <i class="ph ph-plus"></i>
+                    </div>
+                    <div class="remove-btn">Fjern</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="cart-item" data-device="Desktop">
+                <div class="item-details">
+                  <img
+                    class="item-image"
+                    src="images/product/skovkop-grøn.webp"
+                    alt="Skovkop Grøn"
+                  />
+                  <div class="item-info">
+                    <div class="item-header">
+                      <div class="item-brand">Lena Fischers keramik</div>
+                      <div class="item-name">Skovkop</div>
+                    </div>
+                    <div class="item-variation">Grøn</div>
+                  </div>
+                </div>
+                <div class="item-actions">
+                  <div class="item-price">159,-</div>
+                  <div class="quantity-actions">
+                    <div class="quantity-selector">
+                      <i class="ph ph-minus"></i>
+                      <div class="quantity-value">1</div>
+                      <i class="ph ph-plus"></i>
+                    </div>
+                    <div class="remove-btn">Fjern</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="cart-item" data-device="Desktop">
+                <div class="item-details">
+                  <img
+                    class="item-image"
+                    src="images/product/langeskov-kaffen.png"
+                    alt="Langeskov kaffen"
+                  />
+                  <div class="item-info">
+                    <div class="item-header">
+                      <div class="item-brand">KoffiRoast</div>
+                      <div class="item-name">Langeskov kaffen</div>
+                    </div>
+                    <div class="item-variation">200g</div>
+                  </div>
+                </div>
+                <div class="item-actions">
+                  <div class="item-price">59,-</div>
+                  <div class="quantity-actions">
+                    <div class="quantity-selector">
+                      <i class="ph ph-minus"></i>
+                      <div class="quantity-value">1</div>
+                      <i class="ph ph-plus"></i>
+                    </div>
+                    <div class="remove-btn">Fjern</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cart-divider"></div>
+
+              <!-- Item 5 -->
+              <div class="cart-item" data-device="Desktop">
+                <div class="item-details">
+                  <img
+                    class="item-image"
+                    src="images/product/meraki-diffuser.png"
+                    alt="Diffuser"
+                  />
+                  <div class="item-info">
+                    <div class="item-header">
+                      <div class="item-brand">Meraki</div>
+                      <div class="item-name">Diffuser</div>
+                    </div>
+                    <div class="item-variation">Timber Haze</div>
+                  </div>
+                </div>
+                <div class="item-actions">
+                  <div class="item-price">109,-</div>
+                  <div class="quantity-actions">
+                    <div class="quantity-selector">
+                      <i class="ph ph-minus"></i>
+                      <div class="quantity-value">1</div>
+                      <i class="ph ph-plus"></i>
+                    </div>
+                    <div class="remove-btn">Fjern</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="summary-section">
+        <div class="summary-title">Oversigt</div>
+        <div class="summary-container">
+          <div class="summary-content">
+            <div class="summary-row">
+              <div class="summary-label">Sub total</div>
+              <div class="summary-value">486,-</div>
+            </div>
+            <div class="summary-row">
+              <div class="summary-label">Levering</div>
+              <div class="summary-value">0,-</div>
+            </div>
+          </div>
+          <div class="summary-divider"></div>
+          <div class="summary-total">
+            <div class="total-label">Total</div>
+            <div class="total-value">486,-</div>
+          </div>
+          <div class="summary-divider"></div>
+          <div class="summary-row">
+            <div class="summary-label">Heraf moms</div>
+            <div class="summary-value">97,2,-</div>
+          </div>
+        </div>
+        <button
+          class="checkout-btn"
+          data-svævede="No"
+          data-tilstand="Default"
+          data-type="Primær"
+        >
+          Gå til kassen
+        </button>
+        <div class="payment-options">
+          <div class="payment-icon">
+            <img
+              src="images/payment-icons/visa.svg"
+              alt="Visa Icon"
+              class="payment-img"
+            />
+          </div>
+          <div class="payment-icon">
+            <img
+              src="images/payment-icons/apple-pay.svg"
+              alt="Apple Pay Icon"
+              class="payment-img"
+            />
+          </div>
+          <div class="payment-icon">
+            <img
+              src="images/payment-icons/google-pay.svg"
+              alt="Google Pay Icon"
+              class="payment-img"
+            />
+          </div>
+          <div class="payment-icon">
+            <img
+              src="images/payment-icons/mastercard.svg"
+              alt="Mastercard Icon"
+              class="payment-img"
+            />
+          </div>
+          <div class="payment-icon">
+            <img
+              src="images/payment-icons/forbrugsforeningen.svg"
+              alt="Forbrugsforeningen Icon"
+              class="payment-img"
+            />
+          </div>
+          <div class="payment-icon paypal">
+            <img
+              src="images/payment-icons/paypal.svg"
+              alt="PayPal Icon"
+              class="payment-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials-container">
+      <div class="testimonials-heading">Hvad vores kunder siger</div>
+      <div class="testimonials-content">
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="star-rating">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+              </div>
+              <div class="testimonial-text">
+                Smuk butik med masser af personlighed. Jeg fandt en håndlavet
+                skål og nogle delikatesser, jeg aldrig har set før
+              </div>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <div class="author-name">Caroline Petersen</div>
+                <div class="author-date">15-05-2025</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="star-rating">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+              </div>
+              <div class="testimonial-text">
+                Elsker at handle her! Gavekurvene er så fint sammensat, og jeg
+                kunne selv vælge indholdet. Super service og hurtig hjælp.
+              </div>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <div class="author-name">Mette Andersen</div>
+                <div class="author-date">12-05-2025</div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <div class="star-rating">
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+                <i class="ph-fill ph-star"></i>
+              </div>
+              <div class="testimonial-text">
+                Fantastisk lille perle! Købte en gavekurv til min mor med lokale
+                specialiteter, hun blev vildt glad. Kommer helt sikkert igen.
+              </div>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-info">
+                <div class="author-name">Rosa Mertz</div>
+                <div class="author-date">08-05-2025</div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-button prev-button">
+            <i class="ph-bold ph-arrow-left"></i>
+          </div>
+          <div class="nav-button next-button">
+            <i class="ph-bold ph-arrow-right"></i>
+          </div>
+        </div>
+        <div class="pagination-dots">
+          <div class="dot active"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="container">
+      <div class="content">
+        <div class="newsletter-social-section">
+          <div class="newsletter-section">
+            <img
+              src="images/liwira-logo.svg"
+              alt="Liwira Logo"
+              class="footer-logo"
+            />
+            <div class="newsletter-content">
+              <div class="newsletter-title">Tilmeld dig vores nyhedsbrev</div>
+              <div class="newsletter-form">
+                <div class="email-input">
+                  <div class="input-text">Email</div>
+                </div>
+                <div class="submit-button">
+                  <div class="button-text">Tilmeld</div>
+                </div>
+              </div>
+              <div class="newsletter-disclaimer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros elementum tristique,
+              </div>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <div class="column-title">Sociale Medier</div>
+              <div class="column-links">
+                <div class="link-item">
+                  <div class="link-text">Instagram</div>
+                </div>
+                <div class="link-item">
+                  <div class="link-text">Facebook</div>
+                </div>
+                <div class="link-item">
+                  <div class="link-text">LinkedIn</div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-column">
+              <div class="column-title">Kundeservice</div>
+              <div class="column-links">
+                <div class="link-item">
+                  <div class="link-text">Kontakt os</div>
+                </div>
+                <div class="link-item">
+                  <div class="link-text">Bytte og retur</div>
+                </div>
+                <div class="link-item">
+                  <div class="link-text">Fragt og levering</div>
+                </div>
+                <div class="link-item">
+                  <div class="link-text">Handelsbetingelser</div>
+                </div>
+                <div class="link-item">
+                  <div class="link-text">Cookies</div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-column">
+              <div class="column-title">Om Liwira</div>
+              <div class="column-links">
+                <div class="link-item">
+                  <div class="link-text">Vores historie</div>
+                </div>
+                <div class="link-item">
+                  <div class="link-text">Vores butik</div>
+                </div>
+                <div class="link-item">
+                  <div class="link-text">Firmagaver</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="divider"></div>
+          <div class="payment-methods">
+            <div class="payment-icons">
+              <div class="payment-icon">
+                <img
+                  src="images/payment-icons/visa.svg"
+                  alt="Visa"
+                  class="payment-img"
+                />
+              </div>
+              <div class="payment-icon">
+                <img
+                  src="images/payment-icons/mastercard.svg"
+                  alt="Mastercard"
+                  class="payment-img"
+                />
+              </div>
+              <div class="payment-icon">
+                <img
+                  src="images/payment-icons/google-pay.svg"
+                  alt="Google Pay"
+                  class="payment-img"
+                />
+              </div>
+              <div class="payment-icon">
+                <img
+                  src="images/payment-icons/apple-pay.svg"
+                  alt="Apple Pay"
+                  class="payment-img"
+                />
+              </div>
+              <div class="payment-icon">
+                <img
+                  src="images/payment-icons/forbrugsforeningen.svg"
+                  alt="Forbrugsforeningen"
+                  class="payment-img"
+                />
+              </div>
+              <div class="payment-icon">
+                <img
+                  src="images/payment-icons/paypal.svg"
+                  alt="PayPal"
+                  class="payment-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
