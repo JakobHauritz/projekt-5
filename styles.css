@@ -512,6 +512,10 @@ body {
   cursor: pointer;
 }
 
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
 /* Header section */
 .header-content {
   align-self: stretch;
@@ -664,6 +668,11 @@ body {
   object-fit: cover;
   display: block;
   margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.category-image:hover {
+  transform: scale(1.02);
 }
 
 .category-title {
@@ -796,6 +805,11 @@ body {
   height: auto;
   aspect-ratio: 400/486;
   object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-image:hover {
+  transform: scale(1.01);
 }
 
 .product-carousel-info {
@@ -986,10 +1000,14 @@ body {
 .testimonials-slider {
   align-self: stretch;
   position: relative;
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  overflow: visible;
+}
+
+.testimonials-track {
+  display: flex;
   gap: 24px;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .testimonial-card {
@@ -1003,6 +1021,8 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
+  flex-shrink: 0;
+  border-radius: 0px;
 }
 
 .testimonial-content {
@@ -1081,21 +1101,40 @@ body {
   gap: 8px;
   cursor: pointer;
   z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  opacity: 0.9;
+  border: none;
+}
+
+.nav-button:hover {
+  opacity: 1;
+  background: var(--dark-grey);
+}
+
+.nav-button:hover i {
+  color: var(--white);
+}
+
+.nav-button.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .prev-button {
   left: -27.5px;
-  top: 113.11px;
 }
 
 .next-button {
   right: -27.5px;
-  top: 113.11px;
 }
 
 .nav-button i {
   font-size: 24px;
   color: var(--dark-grey);
+  transition: color 0.3s ease;
 }
 
 .pagination-dots {
@@ -1112,12 +1151,19 @@ body {
   border-radius: 9999px;
   background: var(--accent-beige);
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot:hover {
+  background: var(--dark-grey);
+  transform: scale(1.2);
 }
 
 .dot.active {
   background: var(--dark-grey);
 }
 
+/* Responsive Design */
 @media screen and (max-width: 1200px) {
   .testimonials-container {
     padding: 80px 40px;
@@ -1148,12 +1194,12 @@ body {
     line-height: 38.4px;
   }
 
-  .testimonials-slider {
+  .testimonials-track {
     gap: 16px;
   }
 
   .testimonial-card {
-    width: 85%;
+    width: 85vw;
     min-width: 260px;
     padding: 24px;
     height: fit-content;
@@ -1170,15 +1216,24 @@ body {
     line-height: 21px;
   }
 
-  .star-rating {
-    display: inline-flex;
-    gap: 4px;
-  }
-
   .star-rating .ph-star {
     font-size: 18px;
-    color: var(--gold);
-    display: block;
+  }
+
+  .prev-button {
+    left: 10px;
+  }
+
+  .next-button {
+    right: 10px;
+  }
+
+  .nav-button {
+    padding: 12px;
+  }
+
+  .nav-button i {
+    font-size: 20px;
   }
 }
 
@@ -1716,10 +1771,12 @@ footer.container {
 .color-option {
   width: 80px;
   height: 112px;
+  cursor: pointer;
 }
 
 .color-option.selected {
   border: 1px black solid;
+  cursor: default;
 }
 
 /* Size Selector */
@@ -1741,9 +1798,16 @@ footer.container {
   cursor: pointer;
 }
 
-.size-option.selected {
-  background: var(--black);
+.size-option:hover {
+  background: var(--dark-grey-80);
+}
+
+.size-option:hover .size-value {
   color: var(--white);
+}
+
+.size-option.selected {
+  background: var(--dark-grey);
 }
 
 .size-value {
@@ -1751,6 +1815,10 @@ footer.container {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.size-option.selected .size-value {
+  color: var(--white);
 }
 
 /* Quantity Selector */
@@ -1798,6 +1866,10 @@ footer.container {
   line-height: 24px;
 }
 
+.quantity-selector i {
+  cursor: pointer;
+}
+
 /* Purchase Options */
 .purchase-options {
   display: flex;
@@ -1831,6 +1903,11 @@ footer.container {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  text-decoration: none;
+}
+
+.add-to-cart-button:hover {
+  opacity: 0.9;
 }
 
 .shipping-note {
@@ -2420,6 +2497,11 @@ footer.container {
   align-self: stretch;
   height: 364.8px;
   object-fit: fill;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ceramics-product-img:hover {
+  transform: scale(1.01);
 }
 
 .ceramics-product-content {
