@@ -1,0 +1,12 @@
+#backToTopBtn {
+    position: fixed; 
+    bottom: 30px; 
+    right: 1px;
+    font-size: 40px;
+    background-color: transparent;  
+    border: none;            
+    padding: 0;             
+    cursor: pointer;
+    outline: none;
+    z-index: 999;           
+}
