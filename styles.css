@@ -2381,7 +2381,7 @@ footer.container {
     rgba(0, 0, 0, 0.4) 0%,
     rgba(0, 0, 0, 0.6) 100%
   );
-  background-image: url("images/storefront.png");
+  background-image: url("images/storefront.webp");
   background-size: cover;
   background-position: center;
   overflow: hidden;
