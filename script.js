@@ -49,3 +49,5 @@ form.addEventListener("submit", function (event) {
   );
   closeModal();
 });
+
+//Følgende funktion er udviklet med assistance fra ChatGPT (OpenAI), maj 2025

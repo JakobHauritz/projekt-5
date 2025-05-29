@@ -50,3 +50,4 @@ const backToTop = {
   });
   
   //https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+  //Følgende funktion er udviklet med assistance fra ChatGPT (OpenAI), maj 2025
