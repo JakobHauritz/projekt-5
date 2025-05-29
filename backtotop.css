@@ -10,3 +10,13 @@
   outline: none;
   z-index: 999;
 }
+
+#backToTopBtn:hover {
+  opacity: 0.8;
+}
+
+#backToTopBtn img {
+  width: 150px;   /* Gør pilen mindre */
+  height: 150px;
+  display: block;  /* Fjerner eventuelt ekstra afstand */
+}
