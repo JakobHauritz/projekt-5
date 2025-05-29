@@ -10,9 +10,37 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="backtotop.css" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
+  <div class="modal" id="discountModal">
+    <div class="modal-content">
+      <span class="close-button" id="closeButton">&times;</span>
+      <div class="popup-container">
+        <div class="popup-image">
+          <img src="images/popup.jpg" alt="popupimg" />
+        </div>
+        <div class="popup-text">
+          <h2>Hej og velkommen!</h2>
+          <p>
+            Som tak for din interesse giver vi dig 10 % rabat, når du tilmelder
+            dig hos os. Vi glæder os til at byde dig velkommen
+          </p>
+          <form id="discountForm">
+            <input
+              type="email"
+              id="email-Input"
+              placeholder="Enter your email address"
+              required
+            />
+            <button class="discountButton">Tilmeld dig</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <body>
     <div class="info-banner">
       <div class="icon-container">
@@ -456,6 +484,9 @@
         </div>
       </div>
     </div>
+    <button id="backToTopBtn" style="display: none">
+      <img src="img/pil.webp" alt="Pil til toppen" />
+    </button>
     <footer class="container">
       <div class="content">
         <div class="newsletter-social-section">
@@ -586,5 +617,7 @@
       </div>
     </footer>
     <script src="slideshow.js"></script>
+    <script src="backtotop.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
